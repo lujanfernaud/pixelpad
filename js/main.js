@@ -6,6 +6,7 @@ $(document).ready(function() {
 	squaresPerSide = 32;
 	pixels = squaresPerSide * squaresPerSide;
 	pixelsWidth = gridSize / squaresPerSide - (pixelsMargin * 2) + "px";
+	$("#container").html("");
 	createGrid();
 	$(".pixel-size").css({"width": pixelsWidth, "height": pixelsWidth});
 	turnOnNormal();
