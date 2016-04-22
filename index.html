@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Pixelpad</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<section id="main">
+	<div id="panel">
+		<h1>PIXELPAD</h1>
+		<button type="button" id="clear-button">CLEAR</button>
+		<h4 class="decoration"><span>COLORING</span></h4>
+		<button type="button" id="normal-button">NORMAL</button>
+		<button type="button" id="random-button">RANDOM</button>
+		<button type="button" id="shade-button">SHADE</button>
+		<div id="grid-buttons">
+			<h4 class="decoration"><span>GRID SIZE</span></h4>
+			<button type="button" class="grid-button" id="grid-16">16</button>
+			<button type="button" class="grid-button" id="grid-32">32</button>
+			<button type="button" class="grid-button" id="grid-48">48</button>
+			<button type="button" class="grid-button" id="grid-64">64</button>
+			<input type="number" name="grid-set" value="8" min="4" max="64" class="grid-button" id="grid-input">
+			<button type="submit" name="grid-set" class="grid-button" id="grid-set">SET</button>
+		</div>
+	</div>
+	<div id="container"></div>
+</section>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/jquery.color-2.1.2.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
