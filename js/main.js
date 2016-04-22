@@ -3,9 +3,6 @@ $(document).ready(function() {
 	// Set grid and normal function
 
 	$("#container").css({"width": gridSize, "height": gridSize});
-	squaresPerSide = 32;
-	pixels = squaresPerSide * squaresPerSide;
-	pixelsWidth = gridSize / squaresPerSide - (pixelsMargin * 2) + "px";
 	$("#container").html("");
 	createGrid();
 	$(".pixel-size").css({"width": pixelsWidth, "height": pixelsWidth});
